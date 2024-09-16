@@ -1,2 +1,2 @@
-age = input("how old are you?: ")
-print("2050 the user will be:", 27 + int(age))
+age = input("How old are you? ")
+print("In 2050, you will be 57 years old:", 27 + int(age))
