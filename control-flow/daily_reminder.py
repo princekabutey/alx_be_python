@@ -3,8 +3,8 @@ def get_task_details():
     Gets task description, priority, and time sensitivity from user.
     """
     task = input("Enter task description: ")
-    priority = input("Enter task priority (high, medium, low): ").lower()
-    time_bound = input("Is task time-bound? (yes/no): ").lower()
+    priority = input("Enter task priority (high,medium,low): ").lower()
+    time_bound = input("Is task time-bound?(yes or no): ").lower()
     
     return task, priority, time_bound
 
