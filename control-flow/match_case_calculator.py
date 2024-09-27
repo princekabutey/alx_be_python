@@ -23,7 +23,7 @@ match operator:
             else:
                  print("cannot divide by zero")       
 
-print(f"the result is {result}")
+print(f"The result is {result}.")
 
     
      
