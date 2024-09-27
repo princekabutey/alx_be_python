@@ -28,5 +28,7 @@ def provide_reminder(task, priority, time_bound):
         reminder = f"{base_message}. Consider tackling it today."
     
     print(reminder)
-
+def main():
+    task, priority, time_bound = get_task_details()
+    provide_reminder(task, priority, time_bound)
 
