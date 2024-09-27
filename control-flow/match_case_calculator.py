@@ -1,40 +1,31 @@
-def calculator():
-    print("simple calculator")
-    print("1. Addition")
-    print("2. Subtraction")
-    print("3. Multiplication")
-    print("4. Division")
-
-# prompt for user input
+ # prompt for user input
 num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+num2 = int(input("Enter the second number:"))
 
-operator = input("Choose the operation (+, -, *, /):")
+ # display operatin choice
+print("Available operation")
+print("+ : Addition")
+print("- : substraction")
+print("* : Multiplication")
+print("/ : Division")
 
-match operator:
+operation = input("Choose the operation (+, -, *, /):")
+
+#perform calculation using Match case
+match operation:
     case "+":
         result = num1 + num2
         print(f"The result is {result}.")
     case "-":
-        result = num1- num2
+        result = num1 - num2
         print(f"The result is {result}.")
     case "*":
         result = num1 * num2
         print(f"The result is {result}.")
     case "/":
-        if num2 != 0:
-           resut = num1 / num2
-           print(f"The result is {resut}.")
-        else:
-             print("cannot divide by zero")
+            if num2 != 0:
+                 result = num1 / num2
+                 print(f"The result is {result}.")
+            else:
+                 print("Cannot divide by zero.")
 
-    
-     
-        
-        
-    
-
-    
-
-   
-    
