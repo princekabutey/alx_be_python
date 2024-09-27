@@ -7,23 +7,24 @@ def calculator():
 
 
 num1 = int(input("Enter the first number: "))
-operator = input("Choose the operation (+, -, *, /):")
 num2 = int(input("Enter the second number: "))
+operator = input("Choose the operation (+, -, *, /):")
+
     
 match operator:
-        case "+":
-            result = num1 + num2
-        case  "-":
-            result = num1- num2
-        case "*":
-            result = num1 * num2
-        case "/":
-            if num2 != 0:
-                resut = num1 / num2
-            else:
-                 print("cannot divide by zero")       
+    case "+":
+        result = num1 + num2
+    case "-":
+        result = num1- num2
+    case "*":
+        result = num1 * num2
+    case "/":
+        if num2 != 0:
+            resut = num1 / num2
+        else:
+             print("cannot divide by zero")       
 
-print(f"The result is {result}.")
+print(f"The result is {result}")
 
     
      
