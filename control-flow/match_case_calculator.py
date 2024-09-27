@@ -6,9 +6,9 @@ def calculator():
     print("4. Division")
 
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+num1 = int(input("Enter the first number: "))
 operator = input("Choose the operation (+, -, *, /):")
+num2 = int(input("Enter the second number: "))
     
 match operator:
         case "+":
