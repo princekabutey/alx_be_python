@@ -39,7 +39,7 @@ def main():
     """Main function to manage the shopping list"""
     while True:
         display_menu()
-        choice = input("Enter your choice (1-4): ")
+        choice = input("Enter your choice: ")
         
         if choice == "1":
             #prompt for and add an item pass
