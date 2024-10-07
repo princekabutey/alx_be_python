@@ -1,4 +1,4 @@
-def perform_operation(num1: float, num2: float, operation: str) -> float | str:
+def perform_operation(num1, num2, operation):
     """
     Performs basic arithmetic operations.
 
@@ -11,7 +11,19 @@ def perform_operation(num1: float, num2: float, operation: str) -> float | str:
         float or str: Result of the operation or error message.
     """
 
-    from arithmetic_operations import perform_operation   
+    if operation == 'add':
+        return num1 + num2
+    elif operation == 'subtract':
+        return num1 - num2
+    elif operation == 'multiply':
+        return num1 * num2
+    elif operation == 'divide':
+        if num2 != 0:
+            return num1 / num2
+        else:
+            return "Error: Division by zero"
+    else:
+        return "Invalid operation"
 
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
