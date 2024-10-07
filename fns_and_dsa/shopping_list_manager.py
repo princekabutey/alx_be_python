@@ -12,7 +12,7 @@ def display_menu():
 
 def add_item():
     """Add an item to the shopping list"""
-    item = input("Enter item name: ")
+    item = input("Enter item to add: ")
     shopping_list.append(item)
     print(f"Added '{item}' to the list.")
 
