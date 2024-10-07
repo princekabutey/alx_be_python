@@ -3,12 +3,14 @@ shopping_list = []
 
 def display_menu():
     """Display the shopping list menu"""
-    print("\nShopping List Manager")
-    print("---------------------")
-    print("1. Add item")
-    print("2. Remove item")
-    print("3. View list")
-    print("4. Exit")
+    print(f"""\
+        "Shopping List Manager"
+        ---------------------
+        1. Add item
+        2. Remove item
+        3. View list
+        4. Exit
+    """)
 
 def add_item():
     """Add an item to the shopping list"""
@@ -28,7 +30,7 @@ def remove_item():
 def view_list():
     """Display the current shopping list"""
     if shopping_list:
-        print("\nCurrent Shopping List:")
+        print(f"\nCurrent Shopping List:")
         for i, item in enumerate(shopping_list, start=1):
             print(f"{i}. {item}")
     else:
