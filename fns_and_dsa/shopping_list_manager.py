@@ -3,16 +3,16 @@ shopping_list = []
 
 def display_menu():
     """Display the shopping list menu"""
-    print(f"Shopping List Manager")
-    print(f"---------------------")
-    print(f"1. Add Item")
-    print(f"2. Remove Item")
-    print(f"3. View List")
-    print(f"4. Exit")
+    print("Shopping List Manager")
+    print("---------------------")
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
+    print("4. Exit")
 
 def add_item():
     """Add an item to the shopping list"""
-    item = input("Enter item to add: ")
+    item = input("Enter your choice: ")
     shopping_list.append(item)
     print(f"Added '{item}' to the list.")
 
@@ -39,7 +39,7 @@ def main():
     """Main function to manage the shopping list"""
     while True:
         display_menu()
-        choice = input("Enter your choice(1-4): ")
+        choice = input("Enter the item to add: ")
         
         if choice == "1":
             #prompt for and add an item pass
@@ -51,7 +51,7 @@ def main():
             # Display the shopping list pass
             view_list()
         elif choice == "4":
-            print("Goodbye!.")
+            print("Goodbye!")
             break
         else:
             print("Invalid choice. please try again.")
